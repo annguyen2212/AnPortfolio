@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>An's Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/2e13dc7d17.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logoan2 copy.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Software Engineer</p>
+                <h1>Hi, I'm <span>An Nguyen</span><br>from Oklahoma</h1>
+            </div>
+        </div>
+    </div>
+
+      <!-------about--------->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/aboutphoto.png" class="image2">
+                </div>
+
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me <br></h1>
+                    <p>
+                        I am a software engineer currently living in Coweta, Oklahoma. I'm originally from Vietnam and my family moved to the US in 2016. <br>
+                        I makes applications and websites with Javascript fullstack.<br>
+                        My passion for photography, computer and designing is what bring me to my path of software developing. I like to design things and make them work.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Front-End </span><br> HTML/  CSS/ JavaScript/  React</li>
+                            <li><span>Back-End </span><br> Node/  Express</li>
+                            <li><span>Others </span><br> Postgres/  Postbird/  Git/  GitHub</li>
+                            
+                        </ul>
+                       </div>
+
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>2020-current </span><br> Warehouse Associate at Macys Fulfillment Center</li>
+                                <li><span>03/2023-04/2023 </span><br> Freelancer project for H AND Y STEEL ERECTORS LLC</li>
+                                
+                            </ul>
+                        </div>
+
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2020-2022 </span><br> Tulsa Community College</li>
+                                <li><span>2022-2023 </span><br> Fullstack Academy Web Development BootCamp</li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!------services------------------------>
+
+    <div id="services">
+        <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+
+            <div>
+                <i class="fa-solid fa-pen-to-square"></i>
+                <h2>Web design</h2>
+                <p>I design and develop websites for E-commerce, Business, Blog, Education...
+                    <br>For more information, please contact me with the information below!</p>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-layer-group"></i>
+                <h2>App design</h2>
+                <p>I develop simple appications, on your phone or computer. That can benefit you, in your daily life activities.
+                    <br>For more information, please contact me with the information below!</p>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-list"></i>
+                <h2>Others</h2>
+                <p>I'm also open for positions such as Technical Customer Support, Junior Test Developer, Technical Consultant...
+                    <br>For more information, please contact me with the information below!</p>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-----------portfolio------------>
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/project shamazon copy.png">
+                <div class="layer">
+                    <h3>E-commerce Website Shamazon</h3>
+                    <p>This is an e-commerce webiste with many different types of products. You will need to make an account to make purchase and check out.</p>
+                    <a href="https://www.youtube.com/watch?v=9aViJo3mdo8" >
+                        Demo 
+                    </a>
+                    <a href="https://github.com/TeamSlamazon/shamazon" >
+                        Github 
+                    </a>
+                    <a href="https://shamazon.onrender.com/#/" >
+                        Website 
+                    </a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/project HandY copy.png">
+                <div class="layer">
+                    <h3>Business website for H And Y</h3>
+                    <p>This is a business webiste for H And Y company. Which is written by me and two other developers for a client.</p>
+                    <a href="https://www.youtube.com/watch?v=OzIqeOQviJs" >
+                        Demo
+                    </a>
+                    <a href="https://github.com/JoelFolske/H-And-Y" >
+                        Github
+                    </a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Fitness App</h3>
+                    <p>The app shows you different videos and training programs from trainers that you can use to stay active in the summer!</p>
+                    <a href="#" >
+                        Demo 
+                    </a>
+                    <a href="#" >
+                        Github 
+                    </a>
+                    <a href="#" >
+                        Website 
+                    </a>
+                </div>
+            </div>
+          </div> 
+          <a href="#contact" class="btn">Contact Me</a> 
+     </div>     
+       
+</div>
+
+<!---------contact---------------->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>an.nguyen2212002@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>(918)-978-3972</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/anngienpati/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://twitter.com/AnNguye2212"><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href="https://www.linkedin.com/in/anptnguyen/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/annguyen2212"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="images/Resume-An NguyenUpdateMay1.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © An Nguyen <br> Thank you for checking out my portfolio!</p>
+    </div>
+</div>
+
+
+
+    <script src="app.js"></script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwxfF0Z1iNmFHqE5iSbfUVgXGiZV-FwR1_ftmRdx327IRSWt1XoBEb4z9aArbWKnAjb/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {msg.innerHTML = "Message Sent successfully!"
+        setTimeout(function(){
+            msg.innerHTML = ""
+        }, 5000)
+        form.reset()
+    })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+
+</body>
+</html>
